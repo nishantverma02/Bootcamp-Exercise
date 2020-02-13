@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="bootstrap12.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+</head>
+
+
+<body>
+<header>
+<div class="container ">
+  <div class="row">
+    <div class ="col-md-8">
+  <h1><font color="#00CCAA">To The New</font></h1>
+  </div>
+  <div class ="col-md-4">
+  <ul style="margin-top: 10px; margin-left: 40px;" class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  </div>
+</header>
+
+<div>
+  <h2>Bug Report</h2> 
+ </div>
+     <div id="bor">
+      <div  style="font-size: 20px;" class="form-group">
+        <label for="usr">Title:</label>
+        <input type="text" class="form-control" id="usr">
+
+      </div>
+      <div style="font-size: 20px;" class="form-group">
+        <label for="comment">Description:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div> 
+      <div  style="font-size: 20px; " class="form-group">
+        <label for="sel1">Operating System:</label>
+        <select style="background-color: #00CCAA;" class="form-control" id="sel1">
+          <option>windows</option>
+          <option>Linux</option>
+          <option>Apple</option>
+          <option>Android</option>
+        </select>
+      </div> 
+      <div  style="font-size: 20px;" class="form-group">
+        <label for="sel1">Version:</label>
+        <select style="background-color: #00CCAA;" class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div> 
+      <div style="font-size: 20px; " class="radio">
+        <label for="comment">Licence:</label><br>
+        <label><input type="radio" name="optradio" checked>Free</label>
+        <label><input type="radio" name="optradio">Business</label>
+      </div><br>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFileLang" lang="pl-Pl">
+        <label class="custom-file-label" for="customFileLang">Attach Files</label>
+      </div><br>
+      <div class="container" id="sub">
+        <button type="button" class="btn btn-info">Submit</button>
+      </div>
+     
+     </div>
+</body>
+</html>
