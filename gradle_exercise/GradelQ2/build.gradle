@@ -1,0 +1,29 @@
+class ShowDatePlugin<Project> {
+    void apply(Project project) {
+        project.task('showDate', type: ShowDate)
+    }
+}
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+jar {
+    manifest{
+        attributes('Main-Class':'HelloWorld')
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
