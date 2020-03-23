@@ -1,0 +1,18 @@
+(Q9)Which method on the session object can be used to remove an object from the cache?
+
+(A)Though we can not disable the first level cache in hibernate, but we can certainly remove some of objects from it when needed. This is done using two methods :
+
+evict()
+clear()
+Here evict() is used to remove a particular object from cache associated with session, and clear() method is used to remove all cached objects associated with session. So they are essentially like remove one and remove all.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+(Q10) What does @transactional annotation do?
+
+(A)At a high level, when a class declares @Transactional on itself or its members, Spring creates a proxy that implements the same interface(s) as the class you’re annotating. In other words, Spring wraps the bean in the proxy and the bean itself has no knowledge of it. A proxy provides a way for Spring to inject behaviors before, after, or around method calls into the object being proxied.
+
+Internally, its the same as using a transaction advice (using AOP), where a proxy is created first and is invoked before/after the target bean’s method.
+
+The generated proxy object is supplied with a TransactionInterceptor, which is created by Spring. So when the @Transactional method is called from client code, the TransactionInterceptor gets invoked first from the proxy object, which begins the transaction and eventually invokes the method on the target bean. When the invocation finishes, the TransactionInterceptor commits/rolls back the transaction accordingly.
